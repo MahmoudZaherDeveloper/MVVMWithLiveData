@@ -7,7 +7,7 @@ import com.mahmoud.zaher.mvvmwithlifedata.pojo.MovieModel;
 
 public class MovieViewModel extends ViewModel {
 
-    MutableLiveData<String> stringMutableLiveDataForMovieName = new MutableLiveData<>();
+    public MutableLiveData<String> stringMutableLiveDataForMovieName = new MutableLiveData<>();
 
     public void getMovieName() {
         stringMutableLiveDataForMovieName.postValue(getMovieDataFromDB().getMovieName());
